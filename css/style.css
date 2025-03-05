@@ -4,7 +4,7 @@ body{
 
 .contPrezziRossi{
     border: 1px solid black;
-    height: 100%;
+    height: fit-content;
     width: fit-content;
 }
 
@@ -17,7 +17,7 @@ body{
 
 .contPrezziBlu{
     border: 1px solid black;
-    height: 100%;
+    height: fit-content;
     width: fit-content;
 }
 
@@ -39,11 +39,10 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    gap: 0.5dvh;
     border: 1px solid black;
     height: fit-content;
     width: fit-content;
-    
-
 }
 
 .pacco{
