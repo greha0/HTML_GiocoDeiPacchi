@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Sovrapposizione grigia trasparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Sovrappone il contenuto del gioco */
+}
+
+.modal {
+    width: 80vw;
+    height: 70vh;
+    background: url('t.jpg') no-repeat center center/cover; /* Immagine di sfondo */
+    background-size: cover;
+    padding: 4vh;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1vw); /* Sfocatura di sfondo */
+    color: white;
+
+    display: flex;                /* Usa flexbox per il layout */
+    flex-direction: column;       /* Dispone gli elementi in una colonna */
+    justify-content: center;      /* Centra verticalmente */
+    align-items: center;          /* Centra orizzontalmente */
+}
+
+h1 {
+    font-size: 5vw;
+    margin-bottom: 2vh;
+    color: #fff;
+}
+
+input {
+    padding: 1.5vh;
+    font-size: 2vw;
+    border: 0.3vw solid #fff;
+    border-radius: 1vw;
+    width: 80%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+}
+
+.warning {
+    color: red;
+    font-size: 2vw;
+    display: none;
+    margin-top: 2vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('t.jpg') no-repeat center center/cover;
+    filter: blur(2vw);
+    z-index: -1;
+}
+
+#gameContent {
+    display: none;
+    width: 100%;
+}
+
+.contPrezziRossi{
+ 
+    height: fit-content;
+    width: fit-content;
+    font-size: 5dvh;
+}
+
+.prezzoRosso{
+   
+    height: fit-content;
+    width: 26dvh;
+    margin-bottom: 1dvh;
+    background-color: #b85757;
+    border-radius: 10vw;
+    text-align: center;
+    border: 2px solid #d38e82;
+}
+
+.contPrezziBlu{
+
+    height: fit-content;
+    width: fit-content;
+    font-size: 5dvh;
+    
+}
+
+.prezzoBlu{
+    
+    height: fit-content;
+    width: 26dvh;
+    margin-bottom: 1dvh;
+    background-color: #7690bd;
+    border-radius: 10vw;
+    text-align: center;
+    border: 2px solid lightblue;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.grigliaPacchi{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.5dvh;
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+}
+
+.pacco{
+    width: 20dvh;
+    height: 20dvh;
+    border: 1px solid blue;
+}

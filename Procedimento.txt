@@ -1,0 +1,12 @@
+STEP PER LA REALIZZAZIONE DEL GIOCO
+
+schermata iniziale con richiesta del nome (come in menu 4aii);
+schermata a scomparsa con le regole, evidenziare che ci sono;
+schermata del gioco;
+quando vinci pop up modale con due bottoni, cambia giocatore o rimani con il seguente;
+Problema!: quando refreshi la pagina perdi i progressi della partita e il nome del giocatore, capire se si puo' risolvere;
+Plus: coniglio pasquale come premio bonus;
+
+<link rel="stylesheet" href ="css/style.css">
+        <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
