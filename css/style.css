@@ -80,62 +80,19 @@ body::before {
     width: 100%;
 }
 
-.contPrezziRossi{
- 
-    height: fit-content;
-    width: fit-content;
-    font-size: 5dvh;
-}
+.cont-pacchi {
 
-.prezzoRosso{
-   
-    height: fit-content;
-    width: 26dvh;
-    margin-bottom: 1dvh;
-    background-color: #b85757;
-    border-radius: 10vw;
-    text-align: center;
-    border: 2px solid #d38e82;
-}
-
-.contPrezziBlu{
-
-    height: fit-content;
-    width: fit-content;
-    font-size: 5dvh;
-    
-}
-
-.prezzoBlu{
-    
-    height: fit-content;
-    width: 26dvh;
-    margin-bottom: 1dvh;
-    background-color: #7690bd;
-    border-radius: 10vw;
-    text-align: center;
-    border: 2px solid lightblue;
-}
-
-.cont{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-
-.grigliaPacchi{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 0.5dvh;
-    border: 1px solid black;
+    gap: 1vh;
+    border: 2px solid black;
+    width: 32vh;
     height: fit-content;
-    width: fit-content;
+    overflow-x: scroll;
 }
 
-.pacco{
-    width: 20dvh;
-    height: 20dvh;
-    border: 1px solid blue;
+.pacco {
+
+    border: 4px solid rgb(230, 14, 14);
+    width: 8vh;
+    height: 8vh;
 }
